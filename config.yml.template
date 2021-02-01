@@ -1,0 +1,21 @@
+sites:
+    - https://www.yahoo.com
+    - https://www.cnn.com
+    - https://www.msnbc.com
+    - https://www.google.com
+    - https://www.microsoft.com
+    - https://127.0.0.1
+      
+env:
+    # Number of threads to run simultaneously.
+    num_threads: 5
+    # Time in seconds to sleep while running normally (site is still reachable). Default is 30 seconds.
+    refresh_normal: 30
+    # Time in seconds to sleep while in a fail state (site is unreachable). Default is 10 seconds.
+    refresh_fail: 10
+    # Send browser headers with request.
+    send_headers: True
+    # Display site in alphabetical order. Default is false, display as they are listed in the config.
+    alphabetize: False
+    # Minimum uptime percentage before displaying alert.
+    uptime_threshhold: 0.95

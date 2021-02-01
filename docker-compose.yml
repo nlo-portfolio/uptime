@@ -1,0 +1,13 @@
+version: '3.0'
+
+services:
+  uptime:
+    build:
+      context: .
+      dockerfile: Dockerfile.base
+    entrypoint: ["python3", "uptime.py"]
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile.base
+    entrypoint: ["python3", "-m", "unittest", "--verbose"]
